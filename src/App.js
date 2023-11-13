@@ -1,9 +1,7 @@
-import React, { setState, Component } from 'react';
+import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
-
-
 import './App.css';
   
 class App extends Component {
