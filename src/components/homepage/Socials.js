@@ -9,7 +9,7 @@ import Spotify from "../../assets/imgs/icons/spotify.png";
 function Socials (){
     const socials = [
         {
-            href: "https://www.github/kxllytrxn",
+            href: "https://www.github.com/kxllytrxn",
             alt: "Github",
             src: Github
         },
