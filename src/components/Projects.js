@@ -14,7 +14,6 @@ export default function Projects () {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
         >
-
         <div className="projectPage">
             <h2> past experience </h2>
             <p> Click on a card to learn more about my involvements off and on-campus </p>

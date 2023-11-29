@@ -77,7 +77,7 @@ function About (){
                     a fulfilling avenue where I build and create intutive interfaces that are friendly to both user and engineer. 
 
                     <br></br><br></br>
-                    Outside the student life, I enjoy de-stressing through exploring new cafes & restaurants, thrifting vintage pieces at flea markets, and cooking both generational and fusion recipes with my friends.
+                    Outside student life, I enjoy de-stressing through exploring new cafes & restaurants, thrifting vintage pieces at flea markets, and cooking both family and fusion recipes with my friends.
                     </p>
                 </div>
             </div>

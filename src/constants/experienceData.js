@@ -13,13 +13,13 @@ export const experienceData = [
         link: "https://unitedmasters.com/",
         title: "Web UI Engineering Intern",
         details: {
-            desc: "June 2023 - Present",
+            desc: "June - August 2023",
             more: "SF, CA"
         },
         back: {
             about: "UM is a cutting-edge music distrbution company that allows artists to take ownership of their own music through multiple ventures. ",
             tech: "ReactJS, REST APIs, Git, Docker, Figma",
-            desc: "I currently am working on an internal facing tool that displays detailed track information in an intutive format using ReactJS.",
+            desc: "I implemented 4 features for an internal dashboard with 20+ daily users that displays detailed track information in an intutive format using ReactJS.",
         }
     },
     {
@@ -47,9 +47,9 @@ export const experienceData = [
             more: "UC Berkeley"
         },
         back: {
-            about: "SAAS offers data science/ machine learning projects to industry clients such as Verizon, Aisle and Indeed.",
-            tech: "HTML, CSS, Bootstrap Libaries, React.js, Django, AWS, Figma",
-            desc: "As Web Developer, I redesigned and implemented the website homepage with 5+ new features as well as oversaw the data migration to AWS. ",
+            about: "SAAS offers data science/ machine learning projects to industry clients such as Verizon, J&J and Github.",
+            tech: "HTML, CSS, Bootstrap, Django, AWS",
+            desc: "As Web Developer, I redesigned and implemented the homepage with 5+ new features alongside overseeing the data migration to AWS. ",
             more: "I currently serve as the Vice President of Operations, where I oversee day-to-day internal workings alongside our finances."
         }
     },

@@ -2,11 +2,9 @@ import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
-import Socials from "./homepage/Socials";
-
 import cd from "../assets/imgs/homepage/cd.svg";
   
-function Homepage (){
+function Homepage () {
     
     return (
         <motion.div
@@ -26,7 +24,7 @@ function Homepage (){
                         Kelly Tran
                     </h1>
                     <h4> 
-                        a <strong>full-stack</strong> <strong>developer</strong> who loves building friendly products for <strong>all</strong>
+                        a <strong>full-stack developer</strong> who loves building friendly products for <strong>all</strong>
                     </h4>
                     <div className="buttonContainer">
                         <Link className="homeButtons" to="/about">
@@ -39,7 +37,10 @@ function Homepage (){
                 </div>
                 <div className="recordContainer">
                     <div className="recordCircle">
-                        <img alt="Vinyl Record Player"src={cd}></img>
+                        <a href='https://open.spotify.com/track/3TY7q9rofAemFWnloXVP3T?si=0c2101ee435d4bae'>
+                            <img alt="Vinyl Record Player" src={cd}></img>
+
+                        </a>
                     </div>                
                 </div>
             </div>
@@ -47,16 +48,16 @@ function Homepage (){
                 <div className="latestInfo">
                     <h2> currently: </h2>
                     <h3>
-                        SWE Intern @ UnitedMasters
+                        junior @ UC Berkeley studying computer science
+                    </h3>
+                    <h2> previously: </h2>
+                    <h3>
+                        swe intern @ UnitedMasters
                     </h3>
                     <h2> listening to: </h2>
                     <h3>
                         a blend of r&b, edm & indie pop
                     </h3>
-                    <h2 className="connect">
-                        let's connect!
-                    </h2>
-                    <Socials />
                 </div>
                 <div className="spotifyContainer">
                     <h2> the latest hits: </h2>
@@ -65,7 +66,6 @@ function Homepage (){
             </div>
         </div>
         </motion.div> 
-
 )};
   
 export default Homepage;

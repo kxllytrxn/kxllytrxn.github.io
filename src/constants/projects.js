@@ -58,7 +58,7 @@ export const projects = [
     {
         name: "Microalgae Research",
         details: { 
-            desc: "Studied the effects of pH on Isocrysis galbana microalgae under FRIENDS at the Cabrillo Marine Aquairum",
+            desc: "Studied the effects of pH on microalgae under FRIENDS at the Cabrillo Marine Aquairum",
         },
         image: research,
         back: {
