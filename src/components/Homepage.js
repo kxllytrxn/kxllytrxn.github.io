@@ -54,10 +54,6 @@ function Homepage () {
                     <h3>
                         swe intern @ UnitedMasters 
                     </h3>
-                    <h2> up next: </h2>
-                    <h3>
-                        data engineer intern @ PwC 
-                    </h3>
                     <h2> listening to: </h2>
                     <h3>
                         a blend of r&b, edm & indie pop
