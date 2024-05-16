@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 :root {
+  --primary-background: #FFFCF5;
+  --secondary-background: #91ac84;
+  --card-background: #5c7d6d;
+  --card-2-background: #6D9481;
+  --card-3-background: #91ac84;
+  --toggle-bg: #f4d1e2;
+  --primary-text-color: #4B4841;
+  --secondary-text-color: #6D9481;
+  --accent-text-color: #6A0B44;
+  --hover-text-color: #08605F;
+  --card-text-color: #FFFCF5;
+
   --beige: #FFFCF5;
-  --text-brown: #4B4841;
   --black: #262626;
   --grey: #585555;
   --dark-pink: #6A0B44;
@@ -12,8 +23,23 @@
   --green: #5c7d6d;
   --rose: #f4d1e2;
   --yellow: #EC9A29;
+  --cyan: #08605F;
+  --cherry-blossom: #F6C1C3;
 }
 
+[data-theme="dark"] {
+  --primary-text-color: #FFFCF5;
+  --secondary-text-color: #f4d1e2;
+  --primary-background: #5c7d6d;
+  --secondary-background: #D0E2C7;
+  --card-background: #5c7d6d;
+  --card-2-background: #6D9481;
+  --card-3-background: #91ac84;  
+  --card-text-color: #FFFCF5;
+  --accent-text-color: #F6C1C3;
+  --hover-text-color: #6A0B44;
+  --toggle-bg: #08605F;
+}
 .loader:empty {
   position: absolute;
   top: calc(50% - 4em);
@@ -21,8 +47,6 @@
   width: 6em;
   height: 6em;
   background-image: url(../src/assets/imgs/record_player.svg);
-  /*border: 1.1em solid rgba(0, 0, 0, 0.2);
-  border-left: 1.1em solid var(--green);*/
   border-radius: 50%;
   animation: loading 4s infinite linear;
 }
@@ -46,7 +70,7 @@
 }
 
 body {
-  background: var(--beige);
+  background: var(--primary-background);
 }
 
 li {
@@ -58,16 +82,17 @@ li {
 }
 
 .cardLink {
-  color: var(--beige);
+  color: var(--primary-background);
   font-size: 14px;
   text-decoration: underline;
 }
 
 .App {
   font-family: 'Sora', sans-serif;
-  background-color: var(--beige);
-  color: var(--text-brown);
+  background-color: var(--primary-background);
+  color: var(--primary-text-color);
   width: 100%;
+  transition: background-color 350ms ease-in-out;
 }
 
 h2 {
@@ -76,20 +101,19 @@ h2 {
 
 .App-header {
   z-index: 1;
-  color: var(--text-brown);
+  color: var(--primary-text-color);
   min-height: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: right;
   font-size: 24px;
-
   font-weight: 600;
 }
 
 .App-header li {
   font-family: 'Syne Mono', monospace; 
-  margin-left: 50px;
+  margin-right: 50px;
   justify-content: right;
   list-style: none; 
   transition: .3s;
@@ -110,7 +134,7 @@ ul.App-header li:hover {
 
 
 .App-link {
-  color: var(--text-brown);
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 
@@ -182,7 +206,7 @@ ul.App-header li:hover {
 
 .Logo:hover .logoText {
   transition-duration: 1s;
-  color: var(--text-brown);
+  color: var(--primary-text-color);
 }
 
 .aboutContainer,
@@ -225,7 +249,7 @@ ul.App-header li:hover {
   display: flex;
   justify-content: center;
   align-items: center;  
-  background: var(--beige);
+  background: var(--primary-background);
   border: solid 2px rgb(122, 88, 94);
   width: 50px;
   height: 50px;
@@ -238,7 +262,7 @@ ul.App-header li:hover {
 
 .latestInfo > h2  {
   margin-bottom: 5px;
-  color: var(--dark-pink);
+  color: var(--accent-text-color);
   font-weight: 600;
 }
 
@@ -295,7 +319,7 @@ ul.App-header li:hover {
 .heroText > h1 {
   line-height: 80px;
   margin: 5px 0px;
-  color: var(--light-green);
+  color: var(--secondary-text-color);
   font-family: 'Syne', sans-serif;
   font-size: 80px;
   font-weight: 700;
@@ -319,7 +343,7 @@ ul.App-header li:hover {
 }
 
 .heroText > h4 > strong:hover {
-  color: var(--dark-pink);
+  color: var(--hover-text-color);
   transition: ease-in-out .3s;
 }
 .heroText > h3 {
@@ -327,7 +351,7 @@ ul.App-header li:hover {
 }
 
 .heroText > h4 > strong {
-  color: var(--black);
+  color: var(--accent-text-color);
   font-weight: 800;
   font-style: italic;
   transition: ease-in-out .3s;
@@ -344,11 +368,11 @@ ul.App-header li:hover {
   white-space: nowrap;
   font-size: 24px;
   font-weight: 700;
-  color: var(--light-green);
+  color: var(--secondary-text-color);
   font-family: 'Syne', monospace; 
   text-decoration: none;
   margin-right: 30px;
-  border: 2px solid var(--green);
+  border: 2px solid var(--secondary-text-color);
   padding: 5px 10px;
   border-radius: 10px;
   transition: 250ms ease-in-out;
@@ -425,10 +449,15 @@ ul.App-header li:hover {
 .aboutText > h2 {
   font-size: 60px;
   margin-bottom: 0px;
+  color: var(--accent-text-color);
 }
 
 .aboutText > p {
   font-size: 20px;
+}
+
+.aboutText > p strong {
+  color: var(--accent-text-color);
 }
 
 .scrollElement > img {
@@ -604,8 +633,8 @@ ul.App-header li:hover {
 }
 
 .cardFront {
-  background: var(--green);
-  background: radial-gradient(circle, var(--green) 0%, var(--light-green) 46%, var(--sage-green) 95%);
+  background: var(--card-background);
+  background: radial-gradient(circle, var(--card-background) 0%, var(--card-2-background) 46%, var(--card-3-background) 95%);
 }
 
 .cardBack {
@@ -625,13 +654,13 @@ ul.App-header li:hover {
 .cardImage {
   height: 200px;
   width: 200px;
-  border: 2px solid var(--beige);
+  border: 2px solid var(--primary-background);
   border-radius: 10px;
-  background:  var(--beige);
+  background: var(--beige);
 }
 
 .cardHeader {
-  color: var(--beige);
+  color: var(--card-text-color);
 }
 
 .cardHeader > h3 {
@@ -658,7 +687,7 @@ ul.App-header li:hover {
 
 .cardInfo > h4 {
   font-weight: 500;
-  color: var(--beige);
+  color: var(--card-text-color);
   font-size: 16px;
   margin: 5px 0px 0px 0px;
   
@@ -668,7 +697,7 @@ ul.App-header li:hover {
 .cardDetails > h5 > a {
   font-weight: 400;
   font-size: 13px;
-  color: var(--beige);
+  color: var(--card-text-color);
   margin: 5px 0px 0px 0px;
 }
 
@@ -681,7 +710,7 @@ ul.App-header li:hover {
 .cardDetails > h5 > a:hover {
   font-weight: 600;
   text-decoration: underline;
-  color: var(--dark-pink);
+  color: var(--accent-text-color);
   transition: 250ms ease-in;
 }
 
@@ -774,6 +803,106 @@ ul.App-header li:hover {
   height: 30px;
   width: 30px;
 } 
+
+/* Dark Mode */
+
+.toggleContainer {
+  display: flex;
+  align-items: left;
+}
+.toggle {
+  visibility:hidden;
+}
+
+.toggle + label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: var(--toggle-bg);
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+
+}
+
+.toggle + label::before {
+  content: "";
+  height: 40px;
+  width: 80px; 
+  border-radius: 40px;
+  background-color: var(--toggle-bg);
+  margin-right: 5px;
+  transition: background-color 350ms ease-in-out, transform 250ms ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+
+}
+
+.toggle + label::after {
+  content: "";
+  height: 32px;
+  width: 32px; 
+  border-radius: 40px;
+  background-color: var(--toggle-bg);
+  position: absolute;
+  left: 5px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+
+
+}
+
+.toggle:checked + label::after {
+  left: 75px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg,var(--cyan), var(--light-green));
+}
+
+label {
+  width: 80px;
+  height: 40px;
+  position: relative;
+  display: block;
+  background: var(--rose);
+  border-radius: 50px;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+label:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: linear-gradient(180deg,var(--accent-text-color), var(--cherry-blossom));
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label {
+  background: var(--toggle-bg);
+}
+
+input:checked + label:after {
+  left: 75px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg,var(--cyan), var(--light-green));
+}
+
+label, label:after {
+  transition: 0.3s;
+}
+
+label:active:after{ 
+  width: 50px; 
+}
+
+/* body input:checked + label:after  { background: var(--cyan )}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1150px) {
   .aboutText {
@@ -937,7 +1066,7 @@ ul.App-header li:hover {
 
   .App-link.vertical {
     background-color: var(--green);
-    color: var(--beige);
+    color: var(--primary-background);
     z-index: 3;
     justify-content: center;
     align-items: center;

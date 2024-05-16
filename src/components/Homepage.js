@@ -48,8 +48,13 @@ function Homepage () {
                 <div className="latestInfo">
                     <h2> currently: </h2>
                     <h3>
-                        junior @ UC Berkeley studying computer science
+                        incoming senior @ UC Berkeley studying computer science
                     </h3>
+                    <h2> next up: </h2>
+                    <h3>
+                        data engineering intern @ PwC
+                    </h3>
+
                     <h2> previously: </h2>
                     <h3>
                         swe intern @ UnitedMasters 

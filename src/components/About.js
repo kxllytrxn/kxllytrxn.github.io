@@ -72,9 +72,9 @@ function About (){
                     While originally from SoCal, I currently live in the Bay attending UC Berkeley studying Computer Science and Data Science. 
                     <br></br><br></br>
                     I believe in the power of utilizing <strong> creative thinking </strong> to solve everyday problems. 
-                    Between making latte art and storytelling my life through songs, expression of creativity feeds and fuels me.  
-                    This driving force has led me to pursue front-end development,
-                    a fulfilling avenue where I build and create intutive interfaces that are friendly to both user and engineer. 
+                    Between making latte art as a my part-time barista and storytelling my life through songwriting, expression of creativity fuels me.  
+                    This driving force has led me to pursue <strong>full-stack development, </strong>
+                    a fulfilling avenue where I build and create intutive interfaces that are friendly to both <strong> user </strong> and <strong> engineer. </strong>
 
                     <br></br><br></br>
                     Outside student life, I enjoy de-stressing through exploring new cafes & restaurants, thrifting vintage pieces at flea markets, and cooking both family and fusion recipes with my friends.

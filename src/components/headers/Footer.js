@@ -1,10 +1,10 @@
 import React from 'react';
-import Github from "../assets/imgs/icons/github.png";
-import Mail from "../assets/imgs/icons/mail.png";
-import Instagram from "../assets/imgs/icons/instagram.png";
-import LinkedIn from "../assets/imgs/icons/linkedin.png";
-import Spotify from "../assets/imgs/icons/spotify.png";
-import '../App.css';
+import Github from "../../assets/imgs/icons/github.png";
+import Mail from "../../assets/imgs/icons/mail.png";
+import Instagram from "../../assets/imgs/icons/instagram.png";
+import LinkedIn from "../../assets/imgs/icons/linkedin.png";
+import Spotify from "../../assets/imgs/icons/spotify.png";
+import '../../App.css';
 
 function Footer () {
     const socials = [

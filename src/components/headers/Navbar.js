@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Left_Logo from "../assets/imgs/icons/logo-left.png";
-import Right_Logo from "../assets/imgs/icons/logo-right.png";
+import Darkmode from "../../components/headers/Darkmode";
+import Left_Logo from "../../assets/imgs/icons/logo-left.png";
+import Right_Logo from "../../assets/imgs/icons/logo-right.png";
 import { Squash as Hamburger } from 'hamburger-react'
-import '../App.css';
+import '../../App.css';
 
-  function Navbar (){  
+  const Navbar = ({ isDarkMode, setDarkMode }) => {  
     const [isOpen, setOpen] = useState(false);
+    
     const toggleHamburger = () => {
       setOpen(!isOpen);
     }
@@ -58,6 +60,11 @@ import '../App.css';
               <ul className="App-header">
                 {renderLinksHorizontal}           
               </ul>
+              <Darkmode
+                handleChange={setDarkMode}
+                isDarkMode={isDarkMode}
+              />
+                
               <div className='hamburger' onClick={toggleHamburger}>
                   <Hamburger></Hamburger>
               </div>   
@@ -70,3 +77,4 @@ import '../App.css';
 
   };
   export default Navbar;
+

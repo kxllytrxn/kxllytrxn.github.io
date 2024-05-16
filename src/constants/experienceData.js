@@ -1,12 +1,27 @@
-import ashored from "../assets/imgs/projects/ashored.png";
 import bnc from "../assets/imgs/projects/bnc.png";
 import braindump from "../assets/imgs/projects/braindump.png";
+import pwc from "../assets/imgs/projects/pwc.jpeg";
 import saas from "../assets/imgs/projects/saas.jpg";
 import um_logo from "../assets/imgs/projects/um.jpeg";
 import wdd from "../assets/imgs/projects/wdd.png";
 
 
 export const experienceData = [
+    {
+        name: "PwC",
+        image: pwc,
+        link: "https://www.pwc.com/us/en.html",
+        title: "Data Engineering Intern",
+        details: {
+            desc: "June 2024 - Present",
+            more: "NYC, NY"
+        },
+        back: {
+            about: "Products & Tech Team",
+            tech: "",
+            desc: "more info coming soon",
+        }
+    },
     {
         name: "UnitedMasters",
         image: um_logo,
@@ -47,7 +62,7 @@ export const experienceData = [
             more: "UC Berkeley"
         },
         back: {
-            about: "SAAS offers data science/ machine learning projects to industry clients such as Verizon, J&J and Github.",
+            about: "SAAS offers machine learning projects to industry clients such as Github, Spotify, and Verizon.",
             tech: "HTML, CSS, Bootstrap, Django, AWS",
             desc: "As Web Developer, I redesigned and implemented the homepage with 5+ new features alongside overseeing the data migration to AWS. ",
             more: "I currently serve as the Vice President of Operations, where I oversee day-to-day internal workings alongside our finances."
@@ -84,6 +99,7 @@ export const experienceData = [
             desc: "I worked on the Tech Team to update and maintain the Food Pantry web application. I implemented a progress bar and filtering component to optimize userflow."
         }
     },
+    /*
     {
         name: "Ashored Innovations",
         image: ashored,
@@ -99,5 +115,5 @@ export const experienceData = [
             tech: "Figma",
             desc: "I worked with a team of 5 consultants to create a hi-fi prototype of Ashored's fishing software for fishermen to use."
         }
-    }
+    }*/
 ]
