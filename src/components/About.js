@@ -9,7 +9,7 @@ import Matcha from "../assets/imgs/about/matcha.jpg";
 import Tea_Party from "../assets/imgs/about/teaparty.jpg";
 import Soph from "../assets/imgs/about/sophme.jpg";
 
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 import '../App.css';
   
@@ -53,13 +53,13 @@ function About (){
     ];
     
     return (
-        <motion.div
-            className="container text-center  bg-black"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-        >
+        // <motion.div
+        //     className="container text-center  bg-black"
+        //     initial={{ opacity: 0 }}
+        //     animate={{ opacity: 1 }}
+        //     exit={{ opacity: 0 }}
+        //     transition={{ duration: 1 }}
+        // >
 
         <div className="aboutPage">
             <div className="aboutContainer">
@@ -71,8 +71,8 @@ function About (){
                     <p>
                     While originally from SoCal, I currently live in the Bay attending UC Berkeley studying Computer Science and Data Science. 
                     <br></br><br></br>
-                    I believe in the power of utilizing <strong> creative thinking </strong> to solve everyday problems. 
-                    Between making latte art as a my part-time barista and storytelling my life through songwriting, expression of creativity fuels me.  
+                    I combine my creative thinking and analytical skillset to solve everyday problems—whether small or large. 
+                    Between making latte art as a my part-time barista and storytelling my life through songwriting, creativity fuels me.  
                     This driving force has led me to pursue <strong>full-stack development, </strong>
                     a fulfilling avenue where I build and create intutive interfaces that are friendly to both <strong> user </strong> and <strong> engineer. </strong>
 
@@ -118,7 +118,7 @@ function About (){
                 </div>            
             </div>
         </div>
-    </motion.div>
+    // </motion.div>
 )};
 
 export default About;

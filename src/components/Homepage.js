@@ -1,19 +1,39 @@
 import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
-import { motion } from "framer-motion"
 import cd from "../assets/imgs/homepage/cd.svg";
+import LMGithub from "../assets/imgs/icons/github.png";
+import LMMail from "../assets/imgs/icons/mail.png";
+import LMLinkedIn from "../assets/imgs/icons/linkedin.png";
+import LMSpotify from "../assets/imgs/icons/spotify.png";
   
-function Homepage () {
+const Homepage = () => {  
+    const socials = [
+            {
+                href: "https://www.github.com/kxllytrxn",
+                alt: "Github",
+                src: LMGithub
+            },
+            {
+                href: "https://www.linkedin.com/in/kelly-tran-2210/",
+                alt: "LinkedIn",
+                src: LMLinkedIn
+            },
+            {
+                href: "mailto:kellytran03@berkeley.edu",
+                alt: "Mail",
+                src: LMMail
+            },
+            {
+                href: "https://open.spotify.com/artist/52bIqBMAuqcyrtv2kv1CYr?si=9rGtRs1TSomSRX23__t7FA",
+                alt: "Spotify",
+                src: LMSpotify
+            }
+        ];
     
+
+
     return (
-        <motion.div
-            className="container text-center  bg-black"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-        >
         <div className="homePage">
             <div className="heroContainer">
                 <div className="heroText">
@@ -21,7 +41,7 @@ function Homepage () {
                         hi there! i'm
                     </h3>
                     <h1> 
-                        Kelly Tran
+                        kelly tran
                     </h1>
                     <h4> 
                         a <strong>full-stack developer</strong> who loves building friendly products for <strong>all</strong>
@@ -48,21 +68,23 @@ function Homepage () {
                 <div className="latestInfo">
                     <h2> currently: </h2>
                     <h3>
-                        incoming senior @ UC Berkeley studying computer science
+                        senior @ UC Berkeley studying computer science
                     </h3>
-                    <h2> next up: </h2>
+                    <h2> previously: </h2>
                     <h3>
                         data engineering intern @ PwC
                     </h3>
 
-                    <h2> previously: </h2>
-                    <h3>
-                        swe intern @ UnitedMasters 
-                    </h3>
                     <h2> listening to: </h2>
                     <h3>
                         a blend of r&b, edm & indie pop
                     </h3>
+                    {/* <h2>
+                        let's connect! &#8595; 
+                    </h2> */}
+
+                    
+                        
                 </div>
                 <div className="spotifyContainer">
                     <h2> the latest hits: </h2>
@@ -70,7 +92,6 @@ function Homepage () {
                 </div>
             </div>
         </div>
-        </motion.div> 
 )};
   
 export default Homepage;

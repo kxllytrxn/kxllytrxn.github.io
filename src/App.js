@@ -15,14 +15,16 @@ export const App = () => {
 
     return (
       <div className="App" data-theme={isDarkMode ? "dark" : "light"}>
-       
       <Router>
         <Navbar 
           isDarkMode={isDarkMode}
           setDarkMode={toggleDarkMode}
         />
-        <AnimatedRoutes />
-        <Footer />
+        <AnimatedRoutes 
+        />
+        <Footer 
+          isDarkMode={isDarkMode}
+        />
       </Router>
     </div>
      

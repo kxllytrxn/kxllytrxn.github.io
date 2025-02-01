@@ -34,8 +34,8 @@ export default function Card ({ name, image, title, details, link, back }) {
                  <div className="cardHeader">
                     <h2> <strong>{name}</strong> </h2>
                     { back?.tech ? 
-                        <h3> Technologies used: 
-                            <em> {back?.tech} </em>
+                        <h3> Technologies:&nbsp;
+                             {back?.tech} 
                         </h3>
                     : null }
                     <h4>

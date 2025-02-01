@@ -13,13 +13,13 @@ export const experienceData = [
         link: "https://www.pwc.com/us/en.html",
         title: "Data Engineering Intern",
         details: {
-            desc: "June 2024 - Present",
+            desc: "June - August 2024",
             more: "NYC, NY"
         },
         back: {
             about: "Products & Tech Team",
-            tech: "",
-            desc: "more info coming soon",
+            tech: "Python, Streamlit, Docker, Kubernetes, GPT 4.0, Langchain",
+            desc: "I built an internal data generator tool leveraging LLMs to output thousands of data rows to reduce testing timelines by 50%. My team implemented 10+ features to refine LLM outputs and follow strict rules such as relational data and diverse data-types.",
         }
     },
     {
@@ -40,10 +40,10 @@ export const experienceData = [
     {
         name: "Web Design DeCal",
         image: wdd,
-        link: "https://wdd.github.io/",
+        link: "",
         title: "Course Instructor",
         details: {
-            desc: "August 2022 - Present",
+            desc: "August 2022 - May 2024",
             more: "UC Berkeley"
         },
         back: {
