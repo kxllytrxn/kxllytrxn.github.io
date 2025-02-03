@@ -8,6 +8,7 @@
   --card-2-background: #6D9481;
   --card-3-background: #91ac84;
   --toggle-bg: #f4d1e2;
+  --toggle-bg-2: #dcafc5;
   --primary-text-color: #4B4841;
   --secondary-text-color: #6D9481;
   --accent-text-color: #6A0B44;
@@ -27,6 +28,7 @@
   --cyan: #08605F;
   --cherry-blossom: #F6C1C3;
   --record-border: #37644e; 
+  --dark-purple: #343334;
 }
 
 [data-theme="dark"] {
@@ -829,7 +831,7 @@ ul.App-header li:hover {
   display: block;
   cursor: pointer;
   color: var(--toggle-bg);
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 5px rgba(109, 107, 107, 0.2);
 }
 
 .toggle + label::before {
@@ -837,10 +839,10 @@ ul.App-header li:hover {
   height: 40px;
   width: 80px; 
   border-radius: 40px;
-  background-color: var(--toggle-bg);
+  background-color: linear-gradient(180deg, var(--toggle-bg-2), var(--toggle-bg));
   margin-right: 5px;
   transition: background-color 350ms ease-in-out, transform 250ms ease-in-out;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  /* box-shadow: 0px 5px 10px rgba(0,0,0,0.2); */
 
 }
 
@@ -852,7 +854,7 @@ ul.App-header li:hover {
   background-color: var(--toggle-bg);
   position: absolute;
   left: 5px;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 
 
 }
@@ -869,9 +871,11 @@ label {
   height: 40px;
   position: relative;
   display: block;
-  background: var(--rose);
+  /* background: var(--rose); */
+  background: linear-gradient(180deg, var(--toggle-bg-2), var(--toggle-bg));
+
   border-radius: 50px;
-  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  /* box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4); */
   cursor: pointer;
 }
 
@@ -880,11 +884,11 @@ label:after {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 4px;
+  left: 4px;
   background: linear-gradient(180deg,var(--accent-text-color), var(--cherry-blossom));
   border-radius: 30px;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  /* box-shadow: 0px 5px 10px rgba(0,0,0,0.2); */
 }
 
 input {
@@ -894,7 +898,7 @@ input {
 }
 
 input:checked + label {
-  background: var(--toggle-bg);
+  background: linear-gradient(170deg,var(--dark-purple), var(--cyan));
 }
 
 input:checked + label:after {
@@ -1073,7 +1077,7 @@ label:active:after{
   }
 
   .App-link.vertical {
-    background-color: var(--green);
+    background-color: var(--secondary-background);
     color: var(--primary-background);
     z-index: 3;
     justify-content: center;
